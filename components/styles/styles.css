@@ -7,14 +7,14 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: var(--space-2xl);
+    padding: var(--space-l);
     background-color: var(--bg-main);
     box-shadow: var(--shadow-l);
     gap: var(--space-m);
 }
 
 body {
-    background-color: black;
+    background-color: var(--bg-main);
 }
 
 .botones--iconos {
@@ -22,12 +22,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-surface);
     gap: var(--space-xl);
     padding-block: var(--space-l);
 }
 
 .grid {
+    background-color: var(--bg-surface);
     display: inline-grid;
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
@@ -37,9 +37,15 @@ body {
     box-shadow: var(--shadow-l);
 }
 
+.columns {
+    grid-template-rows: none;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--space-l);
+}
+
 .icons__container {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: var(--space-m);

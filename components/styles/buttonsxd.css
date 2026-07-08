@@ -8,7 +8,7 @@
     transition: var(--transition-default);
 }
 
-/* clases de medida: */
+/* clases de medida: a*/
 
 .btn--s {
     padding: var(--space-3xs) var(--space-m);

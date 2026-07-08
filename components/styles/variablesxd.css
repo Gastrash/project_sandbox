@@ -5,10 +5,10 @@
 
     /* background */
     --bg-main: #0b1326;
-    --bg-surface: #4d305f; /*superficies internas: sections, cards, containers, paneles*/
-    --bg-elevated: #af15ff; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
+    --bg-surface: #232f50; /*superficies internas: sections, cards, containers, paneles*/
+    --bg-elevated: #1d1630;; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
     
-    /*
+    /* ay
     --color-secondary: #b89be8;
     --color-terciary: #4d305f;
     --color-cuatro: #2DD4BF;
@@ -32,8 +32,9 @@
 
     /* accent */
     --accent-primary: #b89be8;
-    --accent-secondary: black; /*badge*/
+    --accent-secondary: #1d2c46; /*badge*/
     --accent-success: #e100ff; /*acción completada*/
+    --accent-strong: #99969b;
 
     /* borders */
     --border-primary: rgb(112, 108, 108);
@@ -100,7 +101,7 @@
     --radius-m: 0.75rem; /*12px*/
     --radius-l: 1rem; /*16px*/
     --radius-xl: 2rem; /*32px*/
-    --radius-xl: 3rem; /*48px*/
+    --radius-2xl: 3rem; /*48px*/
     --radius-full: 9999px;
     
     /* transition */
