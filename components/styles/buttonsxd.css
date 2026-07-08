@@ -1,0 +1,118 @@
+/* buttons */
+
+/* clase base: */
+
+.btn {
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-l);
+    transition: var(--transition-default);
+}
+
+/* clases de medida: */
+
+.btn--s {
+    padding: var(--space-3xs) var(--space-m);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.7;
+}
+
+.btn--m {
+    padding: var(--space-2xs)
+    var(--space-xl);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.7;
+}
+
+.btn--l {
+    padding: var(--space-xs) var(--space-3xl);
+    font-size: var(--font-size-5xl);
+    line-height: 1.7;
+    font-weight: var(--font-weight-bold);
+}
+
+/* clases visuales: */
+
+.btn--primary {
+    background-color: var(--accent-primary);
+    border: 2px solid var(--border-primary);
+    color: var(--text-primary);
+    transition: all ease 0.5s;
+}
+
+.btn--primary:hover {
+    background-color: var(--accent-primary);
+    border: 2px solid var(--border-accent);
+    color: var(--text-secondary);
+}
+
+.btn--secondary {
+    background-color: var(--accent-secondary);
+    border: 2px solid var(--border-secondary);
+    color: var(--text-primary);
+}
+
+.btn--secondary:hover {
+    background-color: var(--accent-secondary);
+    border: 2px solid var(--border-accent);
+    color: var(--text-primary);
+}
+
+.btn--danger {
+    background-color: var(--accent-primary);
+    border: 2px solid var(--accent-secondary);
+    color: var(--color-terciary);
+}
+
+.btn--ghost {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+/* otros: */
+
+/* btn--icons */
+
+.btn--icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: var(--space-3xs);*/
+}
+
+.btn--icon--s {
+    width: var(--space-l);
+    height: var(--space-l);
+}
+
+.btn--icon--m {
+    width: var(--space-xl);
+    height: var(--space-xl);
+}
+
+.btn--icon--l {
+    width: var(--space-3xl);
+    height: var(--space-3xl);
+}
+
+/* full container */
+
+.btn--full {
+    width: 100%;
+}
+
+/*
+.input {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
+}
+
+.input:focus {
+  border-color: var(--accent-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(109, 94, 252, 0.2);
+}
+*/
