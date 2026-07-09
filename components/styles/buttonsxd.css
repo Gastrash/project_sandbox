@@ -97,7 +97,7 @@
 .btn--success:hover {
     background-color: var(--accent-success-hover);
     border: 2px solid var(--border-secondary);
-    color: var(--color-secondary);
+    color: var(--text-primary);
     box-shadow: var(--shadow-l);
 }
 
