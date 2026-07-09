@@ -57,15 +57,13 @@
     --font-family-secondary: montserrat, sans-serif;
     
     /* font sizes */
-    --font-size-xs: 0.75rem; /*12px*/
-    --font-size-s: 0.875rem; /*14px*/
-    --font-size-m: 1rem; /*16px*/
-    --font-size-l: 1.25rem; /*20px*/
-    --font-size-xl: 1.5rem;  /*24px*/
-    --font-size-2xl: 2rem; /*32px*/
-    --font-size-3xl: 2.5rem; /*48px*/
-    --font-size-4xl: 3.5rem; /*64px*/
-    --font-size-5xl: 4rem;
+    --font-size-xs: 1rem; /*16px*/
+    --font-size-s: 1.25rem; /*20px*/
+    --font-size-m: 1.5rem;  /*24px*/
+    --font-size-l: 2rem; /*32px*/
+    --font-size-xl: 2.5rem; /*48px*/
+    --font-size-2xl: 3.5rem; /*64px*/
+    --font-size-3xl: 4rem;
 
     /*font weights*/
     --font-weight-regular: 400;

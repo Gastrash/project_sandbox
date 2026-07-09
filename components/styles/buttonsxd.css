@@ -8,26 +8,25 @@
     transition: var(--transition-default);
 }
 
-/* clases de medida: a*/
+/* clases de medida: */
 
 .btn--s {
-    padding: var(--space-3xs) var(--space-m);
-    font-size: var(--font-size-2xl);
+    padding: 0 var(--space-3xs);
+    font-size: var(--font-size-m);
     font-weight: var(--font-weight-regular);
     line-height: 1.7;
 }
 
 .btn--m {
-    padding: var(--space-2xs)
-    var(--space-xl);
-    font-size: var(--font-size-3xl);
+    padding: var(--space-xs) var(--space-l);
+    font-size: var(--font-size-l);
     font-weight: var(--font-weight-semibold);
     line-height: 1.7;
 }
 
 .btn--l {
     padding: var(--space-xs) var(--space-3xl);
-    font-size: var(--font-size-5xl);
+    font-size: var(--font-size-xl);
     line-height: 1.7;
     font-weight: var(--font-weight-bold);
 }
