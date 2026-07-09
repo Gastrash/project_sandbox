@@ -4,7 +4,7 @@
 
 .btn {
     border-radius: var(--radius-m);
-    box-shadow: var(--shadow-l);
+    box-shadow: var(--shadow-s);
     transition: var(--transition-default);
     width: fit-content;
 }
@@ -36,7 +36,7 @@
 
 .btn--primary {
     background-color: var(--accent-strong);
-    border: 2px solid var(--border-primary);
+    border: 2px solid var(--border-secondary);
     color: var(--text-secondary);
     transition: all ease 0.5s;
 }
@@ -45,6 +45,7 @@
     background-color: var(--accent-strong-hover);
     border: 2px solid var(--border-accent);
     color: var(--text-secondary);
+    box-shadow: var(--shadow-l);
 }
 
 .btn--secondary {
@@ -54,21 +55,50 @@
 }
 
 .btn--secondary:hover {
-    background-color: var(--accent-secondary-hover);
+    background-color: var(--accent-primary-hover);
     border: 2px solid var(--border-accent);
     color: var(--text-primary);
+    box-shadow: var(--shadow-l);
 }
 
 .btn--danger {
-    background-color: var(--accent-primary);
-    border: 2px solid var(--accent-secondary);
-    color: var(--color-terciary);
+    background-color: var(--accent-danger);
+    border: 2px solid var(--border-secondary);
+    color: var(--text-primary);
+}
+
+.btn--danger:hover {
+    background-color: var(--accent-danger-hover);
+    border: 2px solid var(--border-secondary);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-l);
 }
 
 .btn--ghost {
     background-color: var(--color-primary);
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--border-secondary);
+    color: var(--text-muted);
+}
+
+.btn--ghost:hover {
+    background-color: var(--color-primary);
+    border: 2px solid var(--border-accent);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-l);
+}
+
+.btn--success {
+    background-color: var(--accent-success);
+    border: 2px solid var(--border-secondary);
     color: var(--color-secondary);
+    box-shadow: var(--shadow-l);
+}
+
+.btn--success:hover {
+    background-color: var(--accent-success-hover);
+    border: 2px solid var(--border-secondary);
+    color: var(--color-secondary);
+    box-shadow: var(--shadow-l);
 }
 
 /* otros: */

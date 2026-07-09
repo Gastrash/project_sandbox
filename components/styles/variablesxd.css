@@ -25,23 +25,26 @@
     */
 
     /* text */
-    --text-primary: #d0d0d0;
+    --text-primary: #ffffff;
     --text-secondary: #ffffff;
     --text-heading: #b49eda;
     --text-muted: #797979;
 
     /* accent */
     --accent-primary: #42365c;
-    --accent-primary-hover: #8884b4;
+    --accent-primary-hover: #130f17;
     --accent-secondary: #2d2535;
     --accent-secondary-hover: #131214; /*badge*/
-    --accent-success: #e100ff; /*acción completada*/
+    --accent-success: #01c918; /*acción completada*/
+    --accent-success-hover: #018c11;
+    --accent-danger: red;
+    --accent-danger-hover: #8a0000;    
     --accent-strong: #b49eda;
-    --accent-strong-hover: #9B7CC0;
+    --accent-strong-hover: #755b95;
 
     /* borders */
-    --border-primary: #363F60;
-    --border-secondary: #4c7aca;
+    --border-primary: #1e1226;
+    --border-secondary: #27073e;
     --border-muted: #797979;
     --border-accent: #BEA4EA;
 
