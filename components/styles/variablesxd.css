@@ -5,7 +5,7 @@
 
     /* background */
     --bg-main: #0b1326;
-    --bg-surface: #232f50; /*superficies internas: sections, cards, containers, paneles*/
+    --bg-surface: #202F49; /*superficies internas: sections, cards, containers, paneles*/
     --bg-elevated: #1d1630;; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
     
     /* ay
@@ -26,21 +26,24 @@
 
     /* text */
     --text-primary: #d0d0d0;
-    --text-secondary: #b89be8;
-    --text-heading: #b89be8;
-    --text-muted: #79797946;
+    --text-secondary: #ffffff;
+    --text-heading: #b49eda;
+    --text-muted: #797979;
 
     /* accent */
-    --accent-primary: #b89be8;
-    --accent-secondary: #1d2c46; /*badge*/
+    --accent-primary: #42365c;
+    --accent-primary-hover: #8884b4;
+    --accent-secondary: #2d2535;
+    --accent-secondary-hover: #131214; /*badge*/
     --accent-success: #e100ff; /*acción completada*/
-    --accent-strong: #99969b;
+    --accent-strong: #b49eda;
+    --accent-strong-hover: #9B7CC0;
 
     /* borders */
-    --border-primary: rgb(112, 108, 108);
-    --border-secondary: #1d2c46;
-    --border-muted: #79797946;
-    --border-accent: #b89be8;
+    --border-primary: #363F60;
+    --border-secondary: #4c7aca;
+    --border-muted: #797979;
+    --border-accent: #BEA4EA;
 
     /* overlays */
     --overlay-s: rgba(0, 0, 0, 0.5);
