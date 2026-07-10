@@ -16,6 +16,7 @@ header {
 
 body {
     background-color: var(--bg-main);
+    color: var(--text-primary);
 }
 
 .botones--iconos {
@@ -36,6 +37,7 @@ body {
     padding: var(--space-xl);
     row-gap: var(--space-l);
     box-shadow: var(--shadow-l);
+    outline: auto;
 }
 
 .columns {
@@ -50,5 +52,4 @@ body {
     justify-content: center;
     align-items: center;
     gap: var(--space-m);
-    
 }

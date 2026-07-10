@@ -1,0 +1,66 @@
+/* card.css */
+
+/* gap in card--s: var(--space-s)
+   gap in card--m: var(--space-m)
+   gap in card--l: var(--space-l)
+*/
+
+/* clases base */
+
+.card {
+    border-radius: var(--radius-s);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--bg-elevated);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: var(--transition-default);
+    outline: auto;
+}
+
+.card:hover {
+    transform: scale(1.5);
+}
+
+.card__overlay {
+    background: linear-gradient(
+        to top,
+        #0b1326ff,
+        #0b132644
+    );
+    width: 100%;
+    height: 25%;
+    color: var(--text-primary);
+    padding: var(--space-2xs);
+    margin-top: auto;
+    outline: auto;
+}
+
+/* clases de tamaños */
+
+.card--s {
+    width: var(--space-3xl);
+    height: var(--container-3xs);
+    font-size: var(--font-size-);
+}
+
+.card--m {
+    width: var(--container-3xs);
+    height: var(--container-2xs);
+}
+
+.card--l {
+    width: var(--container-2xs);
+    height: var(--container-s);
+}
+
+/* clases visuales */
+
+.card--primary {
+
+}
+
+.card--secondary {
+
+}

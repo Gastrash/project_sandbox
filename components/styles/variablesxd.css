@@ -8,7 +8,7 @@
     --bg-surface: #202F49; /*superficies internas: sections, cards, containers, paneles*/
     --bg-elevated: #1d1630;; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
     
-    /* ay
+    /*
     --color-secondary: #b89be8;
     --color-terciary: #4d305f;
     --color-cuatro: #2DD4BF;
@@ -16,11 +16,10 @@
     --color-gris-two: rgb(63, 60, 60);
     
     --text-muted: #8b8b8b;
---border-muted: rgba(121, 121, 121, 0.28);
+    --border-muted: rgba(121, 121, 121, 0.28);
 
---bg-elevated: #1d1630;      superficie elevada real 
---accent-strong: #af15ff;    highlight potente 
-
+    --bg-elevated: #1d1630;    superficie elevada real
+    --accent-strong: #af15ff;    highlight potente
 
     */
 
@@ -31,16 +30,14 @@
     --text-muted: #797979;
 
     /* accent */
-    --accent-primary: #42365c;
-    --accent-primary-hover: #130f17;
-    --accent-secondary: #2d2535;
-    --accent-secondary-hover: #131214; /*badge*/
+    --accent-primary: #b49eda;
+    --accent-primary-hover: #755b95;
+    --accent-secondary: #42365c;
+    --accent-secondary-hover: #130f17; /*badge*/
     --accent-success: #01c918; /*acción completada*/
     --accent-success-hover: #018c11;
     --accent-danger: red;
-    --accent-danger-hover: #8a0000;    
-    --accent-strong: #b49eda;
-    --accent-strong-hover: #755b95;
+    --accent-danger-hover: #8a0000;
 
     /* borders */
     --border-primary: #1e1226;
@@ -54,9 +51,9 @@
     --overlay-l: rgba(0, 0, 0, 0.9);
     
     /* shadows */
-    --shadow-s: 0 2px 6px rgba(0,0,0,0.2);
-    --shadow-m: 0 4px 12px rgba(0,0,0,0.3);
-    --shadow-l: 0 8px 20px rgba(0,0,0,0.35);
+    --shadow-s: 0 4px 12px rgba(0,0,0,0.3);
+    --shadow-m: 0 8px 20px rgba(0,0,0,0.3);
+    --shadow-l: 0 12px 24px rgba(0,0,0,0.35);
     
     /* font family */
     --font-family-base: montserrat, sans-serif;
@@ -108,7 +105,7 @@
     --radius-2xl: 3rem; /*48px*/
     --radius-full: 9999px;
     
-    /* transition */
+    /*transition*/
     --transition-default: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 
     /*
