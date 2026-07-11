@@ -110,13 +110,13 @@
 }
 
 .btn--icon--s {
-    width: var(--space-l);
-    height: var(--space-l);
+    width: var(--space-xl);
+    height: var(--space-xl);
 }
 
 .btn--icon--m {
-    width: var(--space-xl);
-    height: var(--space-xl);
+    width: var(--space-2xl);
+    height: var(--space-2xl);
 }
 
 .btn--icon--l {

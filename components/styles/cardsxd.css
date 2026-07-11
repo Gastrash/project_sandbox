@@ -17,6 +17,9 @@
     overflow: hidden;
     transition: var(--transition-default);
     outline: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .card:hover {
@@ -24,6 +27,8 @@
 }
 
 .card__overlay {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(
         to top,
         #0b1326ff,
@@ -32,9 +37,17 @@
     width: 100%;
     height: 25%;
     color: var(--text-primary);
-    padding: var(--space-2xs);
+    padding: var(--space-s) var(--space-2xs);
     margin-top: auto;
     outline: auto;
+    transition: height 0.3s ease;
+}
+
+.card__overlay p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
 /* clases de tamaños */
@@ -42,25 +55,56 @@
 .card--s {
     width: var(--space-3xl);
     height: var(--container-3xs);
-    font-size: var(--font-size-);
+    --card-title-size: var(--font-size-s);
+    --card-text-size: var(--font-size-xs);
 }
 
 .card--m {
     width: var(--container-3xs);
     height: var(--container-2xs);
+    --card-title-size: var(--font-size-m);
+    --card-text-size: var(--font-size-s);
 }
 
 .card--l {
     width: var(--container-2xs);
     height: var(--container-s);
+    --card-title-size: var(--font-size-l);
+    --card-text-size: var(--font-size-m);
+}
+
+.card__overlay h4 {
+    font-size: var(--card-title-size);
+    margin: 0;
+}
+
+.card__overlay p {
+    font-size: var(--card-text-size);
+    margin: 0;
 }
 
 /* clases visuales */
-
 .card--primary {
 
 }
 
 .card--secondary {
 
+}
+
+/* card:hover */
+.card:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.card:hover .card__overlay {
+    height: 45%;
+    padding-block: var(--space-2xs);
+    gap: var(--space-2xs);
+}
+
+.card:hover .card__overlay p {
+    opacity: 1;
+    max-height: 6rem;
 }
