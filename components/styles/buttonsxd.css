@@ -50,26 +50,26 @@
 .btn--secondary {
     background-color: var(--accent-secondary);
     border: 2px solid var(--border-secondary);
-    color: var(--text-primary);
+    color: var(--text-default);
 }
 
 .btn--secondary:hover {
     background-color: var(--accent-secondary-hover);
     border: 2px solid var(--border-accent);
-    color: var(--text-primary);
+    color: var(--text-default);
     box-shadow: var(--shadow-m);
 }
 
 .btn--danger {
     background-color: var(--accent-danger);
     border: 2px solid var(--border-secondary);
-    color: var(--text-primary);
+    color: var(--text-default);
 }
 
 .btn--danger:hover {
     background-color: var(--accent-danger-hover);
     border: 2px solid var(--border-secondary);
-    color: var(--text-primary);
+    color: var(--text-default);
     box-shadow: var(--shadow-m);
 }
 
@@ -81,20 +81,20 @@
 
 .btn--ghost:hover {
     border: 2px solid var(--border-accent);
-    color: var(--text-primary);
+    color: var(--text-default);
     box-shadow: var(--shadow-m);
 }
 
 .btn--success {
     background-color: var(--accent-success);
     border: 2px solid var(--border-secondary);
-    color: var(--text-primary);
+    color: var(--text-default);
 }
 
 .btn--success:hover {
     background-color: var(--accent-success-hover);
     border: 2px solid var(--border-secondary);
-    color: var(--text-primary);
+    color: var(--text-default);
     box-shadow: var(--shadow-m);
 }
 
@@ -134,7 +134,7 @@
 .input {
   background: var(--bg-surface);
   border: 1px solid var(--border-default);
-  color: var(--text-primary);
+  color: var(--text-default);
 }
 
 .input:focus {
