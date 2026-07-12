@@ -20,10 +20,9 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-}
-
-.card:hover {
-    transform: scale(1.5);
+    
+    --scale-x: 1.5;
+    --scale-y: 1.05;
 }
 
 .card__overlay {
@@ -36,11 +35,11 @@
     );
     width: 100%;
     height: 25%;
-    color: var(--text-primary);
+    color: var(--text-default);
     padding: var(--space-s) var(--space-2xs);
     margin-top: auto;
     outline: auto;
-    transition: height 0.3s ease;
+    transition: var(--transition-default);
 }
 
 .card__overlay p {
@@ -57,6 +56,8 @@
     height: var(--container-3xs);
     --card-title-size: var(--font-size-s);
     --card-text-size: var(--font-size-xs);
+    --card-increase-width: calc(var(--space-3xl)*1.5);
+    --card-increase-height: calc(var(--container-3xs)*1.05);
 }
 
 .card--m {
@@ -64,6 +65,8 @@
     height: var(--container-2xs);
     --card-title-size: var(--font-size-m);
     --card-text-size: var(--font-size-s);
+    --card-increase-width: calc(var(--container-3xs)*1.7);
+    --card-increase-height: calc(var(--container-2xs)*1.08);
 }
 
 .card--l {
@@ -94,7 +97,8 @@
 
 /* card:hover */
 .card:hover {
-    transform: scale(1.2);
+    transform: scale(var(--scale-x), var(--scale-y));
+    box-shadow: var(--shadow-l);
     z-index: 10;
 }
 
