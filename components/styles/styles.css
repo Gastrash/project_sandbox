@@ -1,5 +1,5 @@
 h1 {
-    color: var(--text-primary);
+    color: var(--text-default);
     font-size: var(--font-size-3xl);
 }
 
@@ -16,7 +16,7 @@ header {
 
 body {
     background-color: var(--bg-main);
-    color: var(--text-primary);
+    color: var(--text-default);
 }
 
 .botones--iconos {
