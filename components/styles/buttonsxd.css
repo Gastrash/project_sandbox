@@ -35,13 +35,13 @@
 /* clases visuales: */
 
 .btn--primary {
-    background-color: var(--accent-primary);
+    background-color: var(--accent-default);
     border: 2px solid var(--border-secondary);
     color: var(--text-secondary);
 }
 
 .btn--primary:hover {
-    background-color: var(--accent-primary-hover);
+    background-color: var(--accent-default-hover);
     border: 2px solid var(--border-accent);
     color: var(--text-secondary);
     box-shadow: var(--shadow-m);

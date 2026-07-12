@@ -11,8 +11,8 @@
     padding-block: 0;
     background-color: transparent;
     border: none;
-    border-bottom: var(--border-primary) 2px solid;
-    color: var(--text-primary);
+    border-bottom: var(--border-default) 2px solid;
+    color: var(--text-default);
     box-shadow: none;
 }
 
