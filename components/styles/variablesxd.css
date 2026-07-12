@@ -1,27 +1,26 @@
 /* variables */
 
 :root {
+    /*cambios: cambiar primary por default*/
+
     --background-hero: url("../../assets/image/img-01.jpeg");
 
     /* background */
     --bg-main: #0b1326;
     --bg-surface: #202F49; /*superficies internas: sections, cards, containers, paneles*/
-    --bg-elevated: #1d1630;; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
+    --bg-elevated: #1d1630; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
     
-    /*
-    --color-secondary: #b89be8;
-    --color-terciary: #4d305f;
-    --color-cuatro: ;
-    --color-gris: rgb(112, 108, 108);
-    --color-gris-two: ;
-    
-    --text-muted: #8b8b8b;
-    --border-muted: #8098ff;
-    
-    morado oscuro: #1d1630;
-    
-
-    */
+    /* gradients*/
+    --gradient-default: linear-gradient(
+        to top,
+        transparent,
+        var(--accent-default)
+    );
+    --gradient-secondary: linear-gradient(
+        to top,
+        transparent,
+        var(--accent-secondary);
+    );
 
     /* text */
     --text-default: #ffffff;
@@ -30,8 +29,8 @@
     --text-muted: #797979;
 
     /* accent */
-    --accent-primary: #b49eda;
-    --accent-primary-hover: #755b95;
+    --accent-default: #b49eda;
+    --accent-default-hover: #755b95;
     --accent-secondary: #42365c;
     --accent-secondary-hover: #130f17; /*badge*/
     --accent-success: #01c918; /*acción completada*/
@@ -41,7 +40,7 @@
     --accent-strong: #2DD4BF;
 
     /* borders */
-    --border-primary: #1e1226;
+    --border-default: #1e1226;
     --border-secondary: #27073e;
     --border-muted: #797979;
     --border-accent: #BEA4EA;
@@ -108,7 +107,7 @@
     --radius-full: 9999px;
     
     /*transition*/
-    --transition-default: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, height, width, max-height, max-width;
+    --transition-default: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.5s ease, height 0.5s ease, width 0.5s ease, max-height 0.5s ease, max-width 0.5s ease;
 
     /*
     Otras variables posibles: medidas del hero, transition, z-index, containers, breakpoints (responsive), más accent, blur;
