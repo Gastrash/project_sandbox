@@ -10,27 +10,18 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    inset: 0;
-    z-index: 1;
-    /* alternativa: aumentar medidas en card */
-}
-
-.card__container {
-    position: relative;
-    z-index: 0;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
     border-radius: var(--radius-s);
-    transition: var(--transition-default);
-    
-    transform-origin: left bottom;
-    --scale-x: 1.5;
-    --scale-y: 1.05;
-    
-    outline: auto;
-    
+    /* alternativa: aumentar medidas en card */
+    transition: var(--transition-card);
+    --card-increase-x-value: 1.7;
+    --card-increase-y-value: 1.1;
 }
 
-.card__container::after {
+.card::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -41,15 +32,22 @@
     background-position: center;*/
 }
 
+.card__container {
+    position: relative;
+    z-index: 0;
+    overflow: visible;
+    border-radius: var(--radius-s);
+}
+
 .card__meta {
     display: flex;
     flex-direction: column;
-    
+    position: relative;
+    min-height: 32%;
+    inset: 0;
     background: var(--card-meta-bg);
-    width: 100%;
-    height: 25%;
     color: var(--card-meta-color);
-    padding: var(--space-s) var(--space-2xs);
+    padding: var(--space-2xs) var(--space-2xs);
     margin-top: auto;
     outline: auto;
 }
@@ -73,8 +71,6 @@
     height: var(--container-3xs);
     --card-title-size: var(--font-size-s);
     --card-text-size: var(--font-size-xs);
-    --card-increase-width: calc(var(--space-3xl)*1.5);
-    --card-increase-height: calc(var(--container-3xs)*1.05);
 }
 
 .card--m {
@@ -82,8 +78,6 @@
     height: var(--container-2xs);
     --card-title-size: var(--font-size-m);
     --card-text-size: var(--font-size-s);
-    --card-increase-width: calc(var(--container-3xs)*1.7);
-    --card-increase-height: calc(var(--container-2xs)*1.08);
 }
 
 .card--l {
@@ -97,18 +91,24 @@
 .card--default {
     --card-meta-color: var(--text-default);
     --card-meta-bg: var(--gradient-default);
+    outline: auto;
 }
 
 .card--secondary {
     --card-meta-color: var(--text-secondary);
     --card-meta-bg: var(--gradient-secondary);
+    outline: auto;
 }
 
 /* card:hover */
 .card__container:hover {
-    transform: scale(var(--scale-x), var(--scale-y));
-    box-shadow: var(--shadow-l);
     z-index: 10;
+}
+
+.card__container:hover .card {
+    width: calc(100% * var(--card-increase-x-value));
+    height: calc(100% * var(--card-increase-y-value));
+    box-shadow: var(--shadow-l);
 }
 
 .card__container:hover .card__meta {

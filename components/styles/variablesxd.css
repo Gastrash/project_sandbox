@@ -9,7 +9,8 @@
     --bg-main: #0b1326;
     --bg-surface: #202F49; /*superficies internas: sections, cards, containers, paneles*/
     --bg-elevated: #1d1630; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
-    
+    --bg-elevated-secondary: #36285d;
+
     /* gradients*/
     --gradient-default: linear-gradient(
         to bottom,
@@ -19,9 +20,11 @@
         var(--bg-elevated)
     );
     --gradient-secondary: linear-gradient(
-        to top,
+        to bottom,
         transparent,
-        var(--accent-secondary)
+        var(--bg-elevated-secondary),
+        var(--bg-elevated-secondary),
+        var(--bg-elevated-secondary)
     );
 
     /* text */
@@ -110,6 +113,8 @@
     
     /*transition*/
     --transition-default: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease, transform 0.5s ease, height 0.5s ease, width 0.5s ease, max-height 0.5s ease, max-width 0.5s ease;
+
+    --transition-card: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, opacity 0.5s ease, transform 0.5s ease, height 0.5s ease, width 0.7s ease, max-height 0.5s ease, max-width 0.5s ease;
 
     /*
     Otras variables posibles: medidas del hero, transition, z-index, containers, breakpoints (responsive), más accent, blur;
