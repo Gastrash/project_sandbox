@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+    top: 0;
+    left: 0;
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -17,8 +19,6 @@
     border-radius: var(--radius-s);
     /* alternativa: aumentar medidas en card */
     transition: var(--transition-card);
-    --card-increase-x-value: 1.7;
-    --card-increase-y-value: 1.1;
 }
 
 .card::before {
@@ -43,7 +43,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: 32%;
+    min-height: var(--meta-min-height);
     inset: 0;
     background: var(--card-meta-bg);
     color: var(--card-meta-color);
@@ -66,26 +66,42 @@
 }
 
 /* clases de tamaños */
-.card--s {
+.card--horizontal {
+    aspect-ratio: 16 / 9;
+    width: var(--container-2xs);
+    --card-title-size: var(--font-size-l);
+    --card-text-size: var(--font-size-s);
+
+    --meta-min-height: 40%;
+    --card-increase-x-value: 1.5;
+    --card-increase-y-value: 1.5;
+}
+
+.card--vertical {
+    aspect-ratio: 3 / 4;
+    width: var(--container-3xs);
+    --card-title-size: var(--font-size-l);
+    --card-text-size: var(--font-size-s);
+
+    --meta-min-height: 32%;
+    --card-increase-x-value: 1.7;
+    --card-increase-y-value: 1.1;
+}
+
+.card--vertical-s {
+    aspect-ratio: 3 / 4;
     width: var(--space-3xl);
-    height: var(--container-3xs);
     --card-title-size: var(--font-size-s);
     --card-text-size: var(--font-size-xs);
+
+    --meta-min-height: 32%;
+    --card-increase-x-value: 1.7;
+    --card-increase-y-value: 1.1;
 }
 
-.card--m {
-    width: var(--container-3xs);
-    height: var(--container-2xs);
-    --card-title-size: var(--font-size-m);
-    --card-text-size: var(--font-size-s);
-}
 
-.card--l {
-    width: var(--container-2xs);
-    height: var(--container-s);
-    --card-title-size: var(--font-size-l);
-    --card-text-size: var(--font-size-m);
-}
+
+/* clases de proporción */
 
 /* clases visuales */
 .card--default {
@@ -109,6 +125,9 @@
     width: calc(100% * var(--card-increase-x-value));
     height: calc(100% * var(--card-increase-y-value));
     box-shadow: var(--shadow-l);
+
+    left: calc((1 - var(--card-increase-x-value)) * 50%);
+    top: calc((1 - var(--card-increase-y-value)) * 50%);
 }
 
 .card__container:hover .card__meta {

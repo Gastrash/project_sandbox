@@ -1,0 +1,25 @@
+/* aspect-ratio.css */
+
+.ratio-1-1{
+    --ratio: 1;
+}
+
+.ratio-4-3 {
+    --ratio: 4 / 3;
+}
+
+.ratio-3-4 {
+    --ratio: 3 / 4;
+}
+
+.ratio-16-9 {
+    --ratio: 16 / 9;
+}
+
+.ratio-9-16 {
+    --ratio: 9 / 16;
+}
+
+.ratio-21-9 {
+    --ratio: 21 / 9;
+}

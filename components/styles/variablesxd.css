@@ -112,9 +112,29 @@
     --radius-full: 9999px;
     
     /*transition*/
-    --transition-default: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease, transform 0.5s ease, height 0.5s ease, width 0.5s ease, max-height 0.5s ease, max-width 0.5s ease;
+    --transition-default:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    height 0.5s ease,
+    width 0.5s ease,
+    max-height 0.5s ease,
+    max-width 0.5s ease;
 
-    --transition-card: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, opacity 0.5s ease, transform 0.5s ease, height 0.5s ease, width 0.7s ease, max-height 0.5s ease, max-width 0.5s ease;
+    --transition-card: 
+    background-color 0.5s ease,
+    color 0.5s ease,
+    border-color 0.5s ease,
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    height 0.5s ease,
+    width 0.7s ease,
+    max-height 0.5s ease,
+    max-width 0.5s ease,
+    top 0.7s ease,
+    left 0.7s ease;
 
     /*
     Otras variables posibles: medidas del hero, transition, z-index, containers, breakpoints (responsive), más accent, blur;
