@@ -15,15 +15,8 @@
     transition: var(--transition-card);
 }
 
-.card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: var(--image-hero);
-    background-size: cover;
-}
-
 .card__container {
+    outline: 3px solid var(--border-muted);
     position: relative;
     z-index: 0;
     overflow: visible;
@@ -62,6 +55,8 @@
     --card-title-size: var(--font-size-l);
     --card-text-size: var(--font-size-s);
 
+    background-size: cover;
+
     --meta-min-height: 40%;
     --card-increase-x-value: 1.5;
     --card-increase-y-value: 1.5;
@@ -78,7 +73,7 @@
     --card-increase-y-value: 1.1;
 }
 
-.card--vertical-s {
+.card--vertical-small {
     aspect-ratio: 3 / 4;
     width: var(--space-3xl);
     --card-title-size: var(--font-size-s);
@@ -123,4 +118,13 @@
 .card__container:hover .card__meta p {
     opacity: 1;
     max-height: 6rem;
+}
+
+.card__container:focus .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--accent-default);
+    background-size: cover;
+    outline: auto;
 }

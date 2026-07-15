@@ -1,5 +1,19 @@
 /* inputs.css */
 
+/*
+.input {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  color: var(--text-default);
+}
+
+.input:focus {
+  border-color: var(--accent-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(109, 94, 252, 0.2);
+}
+*/
+
 .input {
     padding: var(--space-2xs) var(--space-s);
     font-size: var(--font-size-l);

@@ -11,21 +11,21 @@
 
 /* clases de medida: */
 
-.btn--s {
+.btn--type-default {
     padding: var(--space-3xs) var(--space-s);
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-regular);
     line-height: 1.7;
 }
 
-.btn--m {
+.btn--type-secondary {
     padding: var(--space-3xs) var(--space-l);
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-semibold);
     line-height: 1.7;
 }
 
-.btn--l {
+.btn--type-verenstitch {
     padding: var(--space-2xs) var(--space-xl);
     font-size: var(--font-size-l);
     line-height: 2;
@@ -34,13 +34,13 @@
 
 /* clases visuales: */
 
-.btn--primary {
+.btn--default {
     background-color: var(--accent-default);
     border: 2px solid var(--border-secondary);
     color: var(--text-secondary);
 }
 
-.btn--primary:hover {
+.btn--default:hover {
     background-color: var(--accent-default-hover);
     border: 2px solid var(--border-accent);
     color: var(--text-secondary);
@@ -129,17 +129,3 @@
 .btn--full {
     width: 100%;
 }
-
-/*
-.input {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-default);
-  color: var(--text-default);
-}
-
-.input:focus {
-  border-color: var(--accent-primary);
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(109, 94, 252, 0.2);
-}
-*/
