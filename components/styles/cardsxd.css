@@ -1,10 +1,5 @@
 /* card.css */
 
-/* gap in card--s: var(--space-s)
-   gap in card--m: var(--space-m)
-   gap in card--l: var(--space-l)
-*/
-
 /* clases base */
 .card {
     display: flex;
@@ -17,7 +12,6 @@
     height: 100%;
     z-index: 1;
     border-radius: var(--radius-s);
-    /* alternativa: aumentar medidas en card */
     transition: var(--transition-card);
 }
 
@@ -25,11 +19,8 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: var(--accent-default);
-    
-
-    /* background-size: cover;
-    background-position: center;*/
+    background-image: var(--image-hero);
+    background-size: cover;
 }
 
 .card__container {
@@ -49,7 +40,6 @@
     color: var(--card-meta-color);
     padding: var(--space-2xs) var(--space-2xs);
     margin-top: auto;
-    outline: auto;
 }
 
 .card__meta h4 {
@@ -99,21 +89,15 @@
     --card-increase-y-value: 1.1;
 }
 
-
-
-/* clases de proporción */
-
 /* clases visuales */
 .card--default {
     --card-meta-color: var(--text-default);
     --card-meta-bg: var(--gradient-default);
-    outline: auto;
 }
 
 .card--secondary {
     --card-meta-color: var(--text-default);
     --card-meta-bg: var(--gradient-secondary);
-    outline: auto;
 }
 
 /* card:hover */
