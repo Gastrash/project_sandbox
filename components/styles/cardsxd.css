@@ -111,7 +111,7 @@
 }
 
 .card--secondary {
-    --card-meta-color: var(--text-secondary);
+    --card-meta-color: var(--text-default);
     --card-meta-bg: var(--gradient-secondary);
     outline: auto;
 }
