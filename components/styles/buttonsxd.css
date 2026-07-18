@@ -1,5 +1,7 @@
 /* buttons */
 
+/* cambiar icon btn a btn cuadrado */
+
 /* clase base: */
 
 .btn {
@@ -11,21 +13,21 @@
 
 /* clases de medida: */
 
-.btn--type-default {
+.btn--size-default {
     padding: var(--space-3xs) var(--space-s);
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-regular);
     line-height: 1.7;
 }
 
-.btn--type-secondary {
+.btn--size-secondary {
     padding: var(--space-3xs) var(--space-l);
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-semibold);
     line-height: 1.7;
 }
 
-.btn--type-verenstitch {
+.btn--size-verenstitch {
     padding: var(--space-2xs) var(--space-xl);
     font-size: var(--font-size-l);
     line-height: 2;

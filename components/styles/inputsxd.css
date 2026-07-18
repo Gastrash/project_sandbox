@@ -12,28 +12,87 @@
   outline: none;
   box-shadow: 0 0 0 3px rgba(109, 94, 252, 0.2);
 }
+
+- textarea: resize, min-height, line-height, padding, overflow, scrollbar.
+
+border-radius, transition, caret-color, font-family, outline, appearance, box-sizing:border-box, ::placeholder, color, opacity, font-weight, :desabled, readonly, :invalid, :focus-visible, 
 */
 
+/* clases base */
 .input {
-    padding: var(--space-2xs) var(--space-s);
-    font-size: var(--font-size-l);
-    font-weight: var(--font-weight-medium);
-    box-shadow: var(--shadow-m);
+  box-shadow: var(--shadow-l);
+  font-family: inherit;
+  width: 100%;
 }
 
-.input--primary {
-    padding-block: 0;
-    background-color: transparent;
-    border: none;
-    border-bottom: var(--border-default) 2px solid;
-    color: var(--text-default);
-    box-shadow: none;
+/* clases de medida */
+
+.input--size-medium {
+  padding-block: 0;
+  padding: var(--space-2xs) var(--space-s);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
 }
 
-.input--primary:hover {
-    color: var(--text-muted);
+.input--size-large {
+  padding-block: 0;
+  padding: var(--space-2xs) var(--space-s);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
+}
+
+.input--textarea {
+  padding-block: 0;
+  padding: var(--space-2xs) var(--space-s);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
+}
+
+/* clases visuales */
+.input--default {
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--border-default) 2px solid;
+  color: var(--text-default);
+  box-shadow: none;
+}
+
+.input--default:hover {
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--border-default) 2px solid;
+  color: var(--text-default);
+  box-shadow: none;
+}
+
+.input--default:focus {
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--border-default) 2px solid;
+  color: var(--text-default);
+  box-shadow: none;
 }
 
 .input--secondary {
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--border-default) 2px solid;
+  color: var(--text-default);
+  box-shadow: none;
+}
 
+.input--secondary:hover {
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--border-default) 2px solid;
+  color: var(--text-default);
+  box-shadow: none;
+}
+
+.input--secondary:focus {
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--border-default) 2px solid;
+  color: var(--text-default);
+  box-shadow: none;
 }

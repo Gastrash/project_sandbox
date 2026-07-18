@@ -49,7 +49,7 @@
 }
 
 /* clases de tamaños */
-.card--horizontal {
+.card--size-horizontal {
     aspect-ratio: 16 / 9;
     width: var(--container-2xs);
     --card-title-size: var(--font-size-l);
@@ -62,7 +62,7 @@
     --card-increase-y-value: 1.5;
 }
 
-.card--vertical {
+.card--size-vertical {
     aspect-ratio: 3 / 4;
     width: var(--container-3xs);
     --card-title-size: var(--font-size-l);
@@ -73,7 +73,7 @@
     --card-increase-y-value: 1.1;
 }
 
-.card--vertical-small {
+.card--size-vertical-small {
     aspect-ratio: 3 / 4;
     width: var(--space-3xl);
     --card-title-size: var(--font-size-s);
