@@ -15,84 +15,114 @@
 
 - textarea: resize, min-height, line-height, padding, overflow, scrollbar.
 
-border-radius, transition, caret-color, font-family, outline, appearance, box-sizing:border-box, ::placeholder, color, opacity, font-weight, :desabled, readonly, :invalid, :focus-visible, 
+border-radius, transition, caret-color, font-family, outline, appearance, box-sizing:border-box, ::placeholder, color, opacity, font-weight, :desabled, readonly, :invalid, :focus-visible.
+
+problemas: como centrar el texto y placeholder en el input (caso textarea), tengo que mejorar variables de colores, agregar mas de estas y un posible refactor a las que ya estan.
 */
 
 /* clases base */
 .input {
+  outline: none;
+  border: none;
+  appearance: none;
   box-shadow: var(--shadow-l);
   font-family: inherit;
   width: 100%;
+  border-radius: var(--radius-s);
+  box-shadow: var(--shadow-s);
+  transition: var(--transition-default);
+  line-height: 1.5;
+}
+
+input:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+/* input:invalid {
+  border: 2px solid red;
+} */
+
+/* input:valid {
+  border-color: green;
+} */
+
+.input:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
 }
 
 /* clases de medida */
 
 .input--size-medium {
-  padding-block: 0;
-  padding: var(--space-2xs) var(--space-s);
-  font-size: var(--font-size-l);
-  font-weight: var(--font-weight-medium);
+  padding: var(--space-2xs) var(--space-xs);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-regular);
 }
 
 .input--size-large {
-  padding-block: 0;
-  padding: var(--space-2xs) var(--space-s);
-  font-size: var(--font-size-l);
+  padding: var(--space-3xs) var(--space-xs);
+  font-size: var(--font-size-m);
   font-weight: var(--font-weight-medium);
 }
 
 .input--textarea {
-  padding-block: 0;
-  padding: var(--space-2xs) var(--space-s);
-  font-size: var(--font-size-l);
+  resize: none;
+  min-height: var(--container-3xs);
+  padding: var(--space-2xs) var(--space-xs);
+  font-size: var(--font-size-m);
   font-weight: var(--font-weight-medium);
+  line-height: 1.7;
 }
 
 /* clases visuales */
 .input--default {
   background-color: transparent;
   border: none;
-  border-bottom: var(--border-default) 2px solid;
+  border-radius: 0;
+  border-bottom: var(--border-muted) 2px solid;
   color: var(--text-default);
-  box-shadow: none;
+  caret-color: var(--accent-default);
 }
 
 .input--default:hover {
-  background-color: transparent;
-  border: none;
-  border-bottom: var(--border-default) 2px solid;
-  color: var(--text-default);
-  box-shadow: none;
+  border-bottom: var(--border-accent) 2px solid;
 }
 
 .input--default:focus {
-  background-color: transparent;
-  border: none;
-  border-bottom: var(--border-default) 2px solid;
+  border-bottom: var(--border-accent) 2px solid;
+  background-color: var(--overlay-s);
   color: var(--text-default);
-  box-shadow: none;
+  box-shadow: var(--shadow-l);
+}
+
+.input--default::placeholder {
+  color: var(--text-default);
+}
+
+.input--default:hover::placeholder, .input--default:focus::placeholder {
+  color: var(--text-muted);
 }
 
 .input--secondary {
-  background-color: transparent;
+  background-color: var(--text-default);
+  color: var(--text-secondary);
   border: none;
-  border-bottom: var(--border-default) 2px solid;
-  color: var(--text-default);
-  box-shadow: none;
+  caret-color: var(--accent-secondary);
 }
 
 .input--secondary:hover {
-  background-color: transparent;
-  border: none;
-  border-bottom: var(--border-default) 2px solid;
-  color: var(--text-default);
-  box-shadow: none;
+
 }
 
 .input--secondary:focus {
-  background-color: transparent;
-  border: none;
-  border-bottom: var(--border-default) 2px solid;
-  color: var(--text-default);
-  box-shadow: none;
+  box-shadow: var(--shadow-l);
+}
+
+.input--secondary::placeholder {
+  color: var(--text-secondary);
+}
+
+.input--secondary:hover::placeholder, .input--secondary:focus::placeholder {
+  color: var(--text-muted);
 }
