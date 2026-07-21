@@ -26,6 +26,11 @@
         var(--bg-elevated-secondary),
         var(--bg-elevated-secondary)
     );
+    --gradient-terciary: linear-gradient(
+        to bottom,
+        white,
+        #cdcdcd
+    );
 
     /* text */
     --text-default: #ffffff;
@@ -42,7 +47,8 @@
     --accent-success-hover: #018c11;
     --accent-danger: red;
     --accent-danger-hover: #8a0000;
-    --accent-strong: #2DD4BF;
+    --accent-disabled: #a8a8b7b2;
+    --accent-ghost: #ffffff42;
 
     /* borders */
     --border-default: #1e1226;
@@ -51,6 +57,7 @@
     --border-accent: #BEA4EA;
 
     /* overlays */
+    --overlay-xs: rgba(0, 0, 0, 0.05);
     --overlay-s: rgba(0, 0, 0, 0.5);
     --overlay-m: rgba(0, 0, 0, 0.7);
     --overlay-l: rgba(0, 0, 0, 0.9);
@@ -59,6 +66,8 @@
     --shadow-s: 0 4px 12px rgba(0,0,0,0.3);
     --shadow-m: 0 8px 20px rgba(0,0,0,0.3);
     --shadow-l: 0 12px 24px rgba(0,0,0,0.35);
+    --shadow-bottom: 5px 15px rgba(0,0,0,0.35);
+    --shadow-accent: 0 8 20px #eeeeeea1;
     
     /* font family */
     --font-family-base: montserrat, sans-serif;
@@ -112,6 +121,7 @@
     --radius-full: 9999px;
     
     /*transition*/
+    --transition-all: all 0.5 ease;
     --transition-default:
     background-color 0.3s ease,
     color 0.3s ease,
