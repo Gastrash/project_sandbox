@@ -1,9 +1,8 @@
 /* variables */
 
 :root {
-    /*cambios: cambiar primary por default*/
+    /* refactor en gradientes y colores base, revisar transition y limpieza final*/
 
-    
     --image-hero: url("../assets/image/img-01.jpeg");
 
     /* background */
@@ -66,8 +65,8 @@
     --shadow-s: 0 4px 12px rgba(0,0,0,0.3);
     --shadow-m: 0 8px 20px rgba(0,0,0,0.3);
     --shadow-l: 0 12px 24px rgba(0,0,0,0.35);
-    --shadow-bottom: 5px 15px rgba(0,0,0,0.35);
-    --shadow-accent: 0 8 20px #eeeeeea1;
+    --shadow-bottom: 2px 10px 20px rgba(0,0,0,0.35);
+    --shadow-accent: 0 8 20px #eeeeee;
     
     /* font family */
     --font-family-base: montserrat, sans-serif;

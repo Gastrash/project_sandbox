@@ -13,11 +13,11 @@
   box-shadow: 0 0 0 3px rgba(109, 94, 252, 0.2);
 }
 
-- textarea: resize, min-height, line-height, padding, overflow, scrollbar.
+- textarea: overflow, scrollbar.
 
-border-radius, transition, caret-color, font-family, outline, appearance, box-sizing:border-box, ::placeholder, color, opacity, font-weight, :desabled, readonly, :invalid, :focus-visible.
+- :desabled, readonly, :invalid, :focus-visible.
 
-problemas: como centrar el texto y placeholder en el input (caso textarea), tengo que mejorar variables de colores, agregar mas de estas y un posible refactor a las que ya estan.
+text-fit: grow;
 
 */
 
@@ -116,23 +116,19 @@ textarea.input {
   caret-color: var(--accent-secondary);
 }
 
-.input--secondary:hover:not(:disabled) {
-  box-shadow: var(--shadow-l);
-}
-
 .input--secondary:focus:not(:disabled) {
   box-shadow: var(--shadow-l);
   border: solid 2px var(--border-muted);
   background: var(--gradient-terciary);
 }
 
-.input--secondary::placeholder {
-  color: var(--text-secondary);
-}
-
 .input--secondary:hover:not(:disabled) {
   box-shadow: var(--shadow-accent);
   color: var(--text-muted);
+}
+
+.input--secondary::placeholder {
+  color: var(--text-secondary);
 }
 
 .input--secondary:focus:not(:disabled) {
