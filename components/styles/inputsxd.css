@@ -43,7 +43,7 @@ textarea.input {
   resize: none;
   min-height: var(--container-3xs);
   padding: var(--space-2xs) var(--space-xs);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   font-weight: var(--font-weight-medium);
   line-height: 1.7;
 }

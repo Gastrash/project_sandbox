@@ -1,7 +1,51 @@
 /* variables */
 
 :root {
-    /* refactor en gradientes y colores base, revisar transition y limpieza final*/
+    /* refactor en gradientes y colores base, revisar transition y limpieza final, text-1.., 
+    
+    transition-color, transition-layout, transition-transform, transition-opacity..
+
+mejora en inputs:
+readonly
+invalid
+valid
+error message
+helper text
+loading
+icon left
+icon right
+password reveal
+counter
+textarea auto-grow
+ 
+mejora en buttons:
+loading
+disabled
+active
+pressed
+outline
+soft
+link
+icon-left
+icon-right
+icon-only
+split button
+
+Mejora de grid: 
+stack
+grid
+cluster
+sidebar
+center
+switcher
+cover
+
+Más variables:
+breakpoints
+z-index
+animation-duration
+opacity
+blur*/
 
     --image-hero: url("../assets/image/img-01.jpeg");
 
