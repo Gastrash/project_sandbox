@@ -1,7 +1,6 @@
 /* variables */
 
-:root {
-    /* refactor en gradientes y colores base, revisar transition y limpieza final, text-1.., 
+/* refactor en gradientes y colores base, revisar transition y limpieza final, text-1.., flex.css, grid.css,
 
 mejora en inputs:
 readonly
@@ -45,65 +44,69 @@ animation-duration
 opacity
 blur*/
 
+:root {
+
+    /*aux*/
     --image-hero: url("../assets/image/img-01.jpeg");
 
     /* background */
     --bg-main: #0b1326;
     --bg-surface: #202F49; /*superficies internas: sections, cards, containers, paneles*/
-    --bg-elevated: #1d1630; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/ /*1*/
-    --bg-elevated-secondary: #36285d; /*2*/
+    --bg-surface-2: #202F49;
+    --bg-elevated: #1d1630; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
+    --bg-elevated-2: #36285d;
 
     /* gradients*/
-    --gradient-default: linear-gradient(
+    --gradient-1: linear-gradient(
         to bottom,
         transparent,
         var(--bg-elevated),
         var(--bg-elevated),
         var(--bg-elevated)
     );
-    --gradient-secondary: linear-gradient(
+    --gradient-2: linear-gradient(
         to bottom,
         transparent,
         var(--bg-elevated-secondary),
         var(--bg-elevated-secondary)
     );
-    --gradient-terciary: linear-gradient(
+    --gradient-3: linear-gradient(
         to bottom,
         white,
         #cdcdcd
     );
 
     /* text */
-    --text-default: #ffffff; /*1*/
-    --text-secondary: rgb(63, 60, 60); /*2*/
-    --text-heading: #b49eda; /*3*/
+    --text-default: #ffffff;
+    --text-secondary: rgb(63, 60, 60);
+    --text-heading: #b49eda;
     --text-muted: #797979; 
 
     /* accent */
-    --accent-default: #b49eda; /*1*/
-    --accent-default-hover: #755b95; /*2*/
-    --accent-secondary: #42365c; /*3*/
-    --accent-secondary-hover: #130f17; /*4*/
-    --accent-success: #01c918; /*1*/
-    --accent-success-hover: #018c11; /*2*/
-    --accent-danger: red; /*1*/
-    --accent-danger-hover: #8a0000; /*2*/
+    --accent-default: #b49eda;
+    --accent-default-hover: #755b95;
+    --accent-secondary: #42365c;
+    --accent-secondary-hover: #130f17;
+    --accent-success: #01c918;
+    --accent-success-hover: #018c11;
+    --accent-danger: red;
+    --accent-danger-hover: #8a0000;
     --accent-disabled: #a8a8b7b2;
     --accent-ghost: #ffffff42;
 
     /* borders */
-    --border-default: #1e1226; /*1*/
-    --border-secondary: #27073e; /*2*/
-    --border-muted: #797979b1; /*3*/
+    --border-default: #1e1226;
+    --border-secondary: #27073e;
+    --border-muted: #797979b1;
     --border-accent: #BEA4EA;
 
     /* overlays */
-    --overlay-xs: rgba(0, 0, 0, 0.05); /*1*/
+    --overlay-xs: rgba(0, 0, 0, 0.05);
     --overlay-s: rgba(0, 0, 0, 0.5); 
     --overlay-m: rgba(0, 0, 0, 0.7);
     --overlay-l: rgba(0, 0, 0, 0.9);
     
-    /* shadows */
+    /* shadows */ /* refactor */
     --shadow-s: 0 4px 12px rgba(0,0,0,0.3);
     --shadow-m: 0 8px 20px rgba(0,0,0,0.3);
     --shadow-l: 0 12px 24px rgba(0,0,0,0.35);
@@ -112,7 +115,7 @@ blur*/
     
     /* font family */
     --font-family-base: montserrat, sans-serif;
-    --font-family-secondary: montserrat, sans-serif; /*1*/
+    --font-family-secondary: montserrat, sans-serif;
     
     /* font sizes */
     --font-size-2xs: 0.75rem; /*12px*/
@@ -125,7 +128,7 @@ blur*/
     --font-size-3xl: 4rem;
 
     /*font weights*/
-    --font-weight-regular: 400; /*1*/
+    --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -161,10 +164,15 @@ blur*/
     --radius-2xl: 3rem; /*48px*/
     --radius-full: 9999px;
     
-    /*transition
-    transition-color, transition-layout, transition-transform, transition-opacity..
-    */
+    /*blur*/
+    --blur-1: ;
+    
+    /*breakpoint*/
+    --breakpoint-1: ;
+    
+    /*transition*/
     --transition-all: all 0.5 ease;
+    
     --transition-default:
     background-color 0.3s ease,
     color 0.3s ease,
@@ -189,7 +197,10 @@ blur*/
     top 0.7s ease,
     left 0.7s ease;
 
-    /*
-    Otras variables posibles: medidas del hero, transition, z-index, containers, breakpoints (responsive), más accent, blur;
-    */
+    --transition-color: ;
+    --transition-layout: ;
+    --transition-transform: ;
+    --transition-opacity: ;
+    
+    --animation-duration: ;
 }
