@@ -1,6 +1,20 @@
 /* buttons */
 
-/* cambiar icon btn a btn cuadrado */
+/* cambiar icon btn a btn cuadrado 
+
+mejora en buttons:
+loading - ⚙️ Guardando...
+disabled
+active - estado
+pressed - manteniendo click
+outline - parecido a ghost
+soft - fondo más suave
+link
+icon-left
+icon-right
+icon-only
+split button
+*/
 
 /* clase base: */
 
@@ -36,7 +50,7 @@
 
 /* btn--icons */
 
-.btn--type-icon {
+.btn--type-square {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -44,12 +58,12 @@
     /*padding: var(--space-3xs);*/
 }
 
-.btn--type-icon-medium {
+.btn--type-square-medium {
     width: var(--space-2xl);
     padding: 0;
 }
 
-.btn--type-icon-small {
+.btn--type-square-small {
     width: var(--space-xl);
     padding: var(--space-3xs);
 }
@@ -58,6 +72,7 @@
 
 .btn--type-full {
     width: 100%;
+    height: 100%;
 }
 
 /* clases visuales: */
