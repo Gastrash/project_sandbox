@@ -87,12 +87,12 @@
 /* clases visuales */
 .card--default {
     --card-meta-color: var(--text-default);
-    --card-meta-bg: var(--gradient-default);
+    --card-meta-bg: var(--gradient-1);
 }
 
 .card--secondary {
     --card-meta-color: var(--text-default);
-    --card-meta-bg: var(--gradient-secondary);
+    --card-meta-bg: var(--gradient-2);
 }
 
 /* card:hover */
