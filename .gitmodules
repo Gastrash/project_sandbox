@@ -1,0 +1,3 @@
+[submodule "components/src/ui"]
+	path = components/src/ui
+	url = https://github.com/Gastrash/gx-ui-system.git
