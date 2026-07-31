@@ -1,6 +1,14 @@
 /* Card.jsx */
 
 /*
+Partición del componente:
+
+- 
+
+- reemplazar componentes, diseñar refactor de la arquitectura.
+*/
+
+/*
 function Card({
   variant = "default",
   size = "1",

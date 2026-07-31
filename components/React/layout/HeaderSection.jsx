@@ -1,7 +1,15 @@
-/* Card.jsx */
+/* HeaderSection.jsx */
 
 /*
-function Card({
+Partición del componente:
+
+- Titulo, sectionNav (pelis, series, favoritos), actionsNav (account, search, notifications).
+
+- reemplazar componentes, diseñar refactor de la arquitectura.
+*/
+
+/*
+function HeaderSection({
   variant = "default",
   size = "1",
   layout = "vertical",
