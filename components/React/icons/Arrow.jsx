@@ -1,6 +1,7 @@
 // icons/Arrow.jsx
 
 function Arrow({
+    layout = "default",
     rotation = "0"
     /*
     left = 0,
@@ -11,7 +12,7 @@ function Arrow({
 }) {
     return (
         <svg
-            className={`icon icon--rotate-${rotation}`}
+            className={`icon icon--layout-${layout} icon--rotate-${rotation}`}
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
             height="1em"

@@ -12,7 +12,7 @@ function Input({
     <div className="input__container">
       {icon && iconPosition === "left" && <span className="field__icon">{icon}</span>}
 
-      <input className={`input input--${variant} input--size-${size} input--layout-${layout}`}/>
+      <input className={`input input--variant-${variant} input--size-${size} input--layout-${layout}`}/>
 
       {icon && iconPosition === "right" && <span className="field__icon">{icon}</span>}
     </div>

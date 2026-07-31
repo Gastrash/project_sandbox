@@ -12,7 +12,7 @@ function Button({
   /* const validIconPosition = iconPosition === "right" ? "right" : "left" */
 
   return (
-    <button className={`btn btn--${variant} btn--size-${size} btn--layout-${layout}`}>
+    <button className={`btn btn--variant-${variant} btn--size-${size} btn--layout-${layout}`}>
 
       {icon && iconPosition === "left" && <span className="btn__icon">{icon}</span>}
 
