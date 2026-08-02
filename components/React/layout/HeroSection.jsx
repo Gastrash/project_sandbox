@@ -1,7 +1,7 @@
 /* layout/HeroSection.jsx */
 
 import HeroComponent from "../layout/components/HeroComponent.jsx"
-
+/*import defaultImage*/
 /*
 
 Partición del componente:
@@ -15,7 +15,8 @@ Partición del componente:
 function Hero({
     layoutSection = "1",
     dataSection = "1",
-    bgImage = defaultImage
+    bgImage = defaultImage,
+    children
 }) {
     defaultImage = "../assets/image/img-01.jpeg"
     return (
