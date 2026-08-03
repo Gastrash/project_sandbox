@@ -1,7 +1,9 @@
 /* layout/HeaderSection.jsx */
-
+/*
 import Card from "../components/Card.jsx"
 import List from "../components/List.jsx"
+*/
+import HeaderComponent from "component/HeaderComponent.jsx"
 
 /*
 Partición del componente:
@@ -12,12 +14,25 @@ Partición del componente:
 */
 
 function HeaderSection({
-  
+  layoutSection = "AnimeTV",
+  children
 }) {
     return (
         <header>
             <div className="header flex flex-row justify-space-between align-center">
-                <div className="header__left flex flex-row justify-center align-center">
+              {children}
+            </div>
+        </header>
+  )
+}
+
+export default Header
+
+/*
+
+<Card variant="default" size="1" layout="vertical" backgroundImage="src/assets/image/img-01.jpeg"></Card>
+
+HeaderComponent: <div className="header__left flex flex-row justify-center align-center">
                     <h2 className="header__title">AnimeTV</h2>
                     <nav className="header__nav flex flex-row justify-center align-center">
                         <List>
@@ -32,11 +47,5 @@ function HeaderSection({
                     <Button variant="secondary" size="1" layout="square" icon={<Notifications />}></Button>
                     <Button variant="secondary" size="1" layout="square" icon={<Account />}></Button>
                 </div>
-            </div>
-        </header>
-  )
-}
 
-export default Header
-
-// <Card variant="default" size="1" layout="vertical" backgroundImage="src/assets/image/img-01.jpeg"></Card>
+*/

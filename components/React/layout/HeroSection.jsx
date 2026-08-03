@@ -23,9 +23,7 @@ function Hero({
         <section id="hero">
             <div className="hero flex flex-column">
                 <div className="hero__overlay flex flex-column justify-flex-end">
-                  
-                    <HeroComponent configSection="1" dataSection>
-                      {children}</HeroComponent>
+                  {children}
                 </div>
             </div>
         </section>
@@ -37,6 +35,8 @@ export default Hero
 /*
 
 <Card variant="default" size="1" layout="vertical" backgroundImage="src/assets/image/img-01.jpeg"></Card>
+
+<HeroComponent layoutSection="1" dataSection></HeroComponent>
 
   HeroComponent: 
   <div className="hero-image">
