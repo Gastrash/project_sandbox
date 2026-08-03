@@ -14,7 +14,7 @@ Partición del componente:
 */
 
 function HeaderSection({
-  layoutSection = "AnimeTV",
+  layoutSection = "AnimeTV", //AnimeTV
   children
 }) {
     return (
@@ -32,20 +32,26 @@ export default Header
 
 <Card variant="default" size="1" layout="vertical" backgroundImage="src/assets/image/img-01.jpeg"></Card>
 
-HeaderComponent: <div className="header__left flex flex-row justify-center align-center">
-                    <h2 className="header__title">AnimeTV</h2>
-                    <nav className="header__nav flex flex-row justify-center align-center">
-                        <List>
-                            <Button variant="link">Películas</Button>
-                            <Button variant="link">Series</Button>
-                            <Button variant="link">Favoritos</Button>
-                        </List>
-                    </nav>
-                </div>
-                <div className="header__right flex flex-row justify-center align-center">
-                    <Button variant="secondary" size="1" layout="square" icon={<Search />}></Button>
-                    <Button variant="secondary" size="1" layout="square" icon={<Notifications />}></Button>
-                    <Button variant="secondary" size="1" layout="square" icon={<Account />}></Button>
-                </div>
+HeaderComponent: 
+//import: Card, List.
+<div className="header__left flex flex-row justify-center align-center">
+    <h2 className="header__title">AnimeTV</h2>
+    <nav className="header__nav flex flex-row justify-center align-center">
+        <List>
+            <Button variant="link">Películas</Button>
+            <Button variant="link">Series</Button>
+            <Button variant="link">Favoritos</Button>
+        </List>
+    </nav>
+    </div>
+<div className="header__right flex flex-row justify-center align-center">
+    <nav className="header__nav flex flex-row justify-center align-center">
+        <List>
+            <Button variant="secondary" size="1" layout="square" icon={<Search />}></Button>
+            <Button variant="secondary" size="1" layout="square" icon={<Notifications />}></Button>
+            <Button variant="secondary" size="1" layout="square" icon={<Account />}></Button>
+        </List>
+    </nav>
+    </div>
 
 */

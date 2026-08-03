@@ -4,10 +4,10 @@
 // realizar defaultImage, realizar variante mas compleja.
 
 function Card({
-  variant = "default",
-  size = "1",
-  layout = "vertical",
-  backgroundImage = defaultImage,
+  variant = "default", //default, secondary
+  size = "2", //1, 2, 3
+  layout = "vertical", // horizontal(16:9), vertical(3:4)
+  backgroundImage = defaultImage, //
   children
 }) {
   return (

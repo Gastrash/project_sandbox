@@ -1,10 +1,10 @@
 /* Input.jsx */
 
 function Input({
-  variant = "default",
-  size = "1",
-  layout = "text",
-  iconPosition = "left",
+  variant = "default", //default, secondary,
+  size = "1", //1, 2, 3
+  layout = "text", //text, textarea,
+  iconPosition = "left", //left, right.
   icon,
   children
 }) {

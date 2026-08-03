@@ -7,13 +7,13 @@
 
 function List ({
     layout = "horizontal",
-    variant = "default",
+    variant = "default", //
     children
 }){
     return (
         <ul className={`list list--layout-${layout} list--variant-${variant}`}>
             <li className={`list__element list__element--variant-${variant}`}>
-                children
+                {children}
             </li>
         </ul>
     )

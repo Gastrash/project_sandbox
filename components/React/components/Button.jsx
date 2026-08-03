@@ -1,10 +1,10 @@
 /* Button.jsx */
 
 function Button({
-  variant = "default",
-  size = "1",
-  layout = "normal",
-  iconPosition = "left",
+  variant = "default", // default, secondary, 
+  size = "1", // 1, 2, 3
+  layout = "normal", //
+  iconPosition = "left", //left, right
   icon,
   children
 }) {
@@ -29,6 +29,6 @@ export default Button
 /*
 pendiente: loading, disabled, onClick, fullWidth, href (a), events, accesibilidad (aria-*), forwardRef, className externa, style externa.
 
-<Button variant="secondary" size="2" layout="iconText" icon={<Arrow />}>Siguiente</Button>
+<Button variant="secondary" size="2" layout="icontext" icon={<Arrow />}>Siguiente</Button>
 
 */
