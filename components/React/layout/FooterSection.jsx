@@ -14,7 +14,7 @@ function FooterSection ({
   return (
     <footer>
       <div class="footer flex">
-        {children}
+        <FooterComponent data={dataSection} layout={layoutSection}></FooterComponent>
       </div>
     </footer>
   )

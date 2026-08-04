@@ -1,17 +1,18 @@
-// layout/ContentSection.jsx
+// layout/ContentSection.jsx (exclusivo de AnimeTV)
 
 import ContentComponent from "components/ContentComponent"
 
 // Refactor de styles, componente pensado para modificar con props mas adelante
 
 function ContentSection ({
-  layoutContent="default", //default, ranking, grid
+  layoutSection="default", //default, ranking, grid
+  dataSection = "1",
   children
 }){
     return (
         <section className="container-secondary">
             <div className="content flex flex-column">
-              {children}
+              <ContentComponent layout={layoutSection} data={dataSection}></ContentComponent>
             </div>
         </section>
     )
@@ -20,16 +21,5 @@ function ContentSection ({
 export default ContentSection
 
 /*
-
-ContentComponent: 
-//import: Card, List.
-<header className="content__header container">
-    <h3>Novedades para ti</h3>
-</header>
-<main className="content__viewport">
-    <List layout="grid" variant="secondary">
-        <Card variant="default" size="1" layout="vertical" backgroundImage="src/assets/image/img-01.jpeg"></Card>
-    </List>
-</main>
 
 */
