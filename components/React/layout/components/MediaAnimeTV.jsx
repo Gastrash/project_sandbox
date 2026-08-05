@@ -1,16 +1,13 @@
-//layout/components/MediaComponent.jsx (exclusivo de AnimeTV)
+//layout/components/MediaAnimeTV.jsx
 
 import List from "../../components/List.jsx"
 import Button from "../../components/Button.jsx"
 
-function MediaComponent ({
-    layout = "default",
-    data = "1"
+function MediaAnimeTV ({
+    dataNumber
 }) {
-    switch(layout) {
-        case "default":
-            return (
-                <>
+    return (
+        <>
                     <main className="mediaPlayer__viewer flex flex-column">
     <img className="mediaPlayer-video" src="assets/image/img-01.jpeg"> 
         <source src="assets/image/img-01.jpeg" type="image/jpeg">
@@ -46,10 +43,7 @@ function MediaComponent ({
     </nav>
 </footer>
                 </>
-            )
-        case "2":
-            return (<></>)
-    }
+    )
 }
 
-export default MediaComponent
+export default MediaAnimeTV

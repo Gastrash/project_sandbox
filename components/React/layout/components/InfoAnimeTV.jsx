@@ -1,16 +1,13 @@
-//layout/components/InfoComponent.jsx (exclusivo de AnimeTV)
+//layout/components/InfoAnimeTV.jsx
 
 import List from "../../components/List.jsx"
 import Button from "../../components/Button.jsx"
 
-function InfoComponent ({
-    layout = "default",
-    data = "1"
+function InfoAnimeTV ({
+    dataNumber
 }) {
-    switch(layout) {
-        case "default":
-            return (
-                <>
+    return (
+        <>
                     <div className="infoContent__primary flex flex-column"> 
     <header className="infoContent__title flex flex-row justify-flex-start align-center">
         <h2>Cyberpunk Odyssey</h2>
@@ -40,10 +37,7 @@ function InfoComponent ({
         </video>
     </div>
                 </>
-            )
-        case "2":
-            return (<></>)
-    }
+    )
 }
 
-export default InfoComponent
+export default InfoAnimeTV

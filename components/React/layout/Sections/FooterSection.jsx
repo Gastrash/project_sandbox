@@ -7,14 +7,14 @@ import FooterComponent from "components/FooterComponent.jsx"
 */
 
 function FooterSection ({
-  layoutSection = "default",
-  dataSection = "1",
-  children
+  variant = "AnimeTV",
+  dataType = {variant},
+  dataNumber = "1"
 }) {
   return (
     <footer>
       <div class="footer flex">
-        <FooterComponent data={dataSection} layout={layoutSection}></FooterComponent>
+        <FooterComponent variant={variant} dataType={dataType} dataNumber={dataNumber}></FooterComponent>
       </div>
     </footer>
   )

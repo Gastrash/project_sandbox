@@ -1,16 +1,13 @@
-//layout/components/SeasonComponent.jsx (exclusivo de AnimeTV)
+//layout/components/SeasonAnimeTV.jsx
 
 import List from "../../components/List.jsx"
 import Button from "../../components/Button.jsx"
 
-function SeasonComponent ({
-    layout = "default",
-    data = "1"
+function SeasonAnimeTV ({
+    dataNumber
 }) {
-    switch(layout) {
-        case "default":
-            return (
-                <>
+    return (
+        <>
                     <div className="seasonContent__actions flex flex-row justify-flex-start">
     <Button size="2" layout="split" variant="secondary" icon={<Arrow rotation="270" />}>Temporada 1</Button>
 </div>
@@ -27,10 +24,7 @@ function SeasonComponent ({
     <Button size="2" layout="square" variant="secondary" icon={<Arrow rotation="180"/>}></Button>
 </nav>
                 </>
-            )
-        case "2":
-            return (<></>)
-    }
+    )
 }
 
-export default SeasonComponent
+export default SeasonAnimeTV

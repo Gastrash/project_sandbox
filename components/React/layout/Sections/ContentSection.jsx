@@ -5,14 +5,15 @@ import ContentComponent from "components/ContentComponent"
 // Refactor de styles, componente pensado para modificar con props mas adelante
 
 function ContentSection ({
-  layoutSection="default", //default, ranking, grid
-  dataSection = "1",
-  children
+  //default, ranking, grid
+  variant = "default",
+  dataType = {variant},
+  dataNumber = "1"
 }){
     return (
         <section className="container-secondary">
             <div className="content flex flex-column">
-              <ContentComponent layout={layoutSection} data={dataSection}></ContentComponent>
+              <ContentComponent variant={variant} dataNumber={dataNumber} dataType={dataType}></ContentComponent>
             </div>
         </section>
     )

@@ -1,6 +1,6 @@
 /* layout/HeroSection.jsx */
 
-import HeroComponent from "../layout/components/HeroComponent.jsx"
+import HeroAnimeTV from "./components/HeroAnimeTV.jsx"
 /*import defaultImage*/
 /*
 
@@ -9,17 +9,16 @@ import HeroComponent from "../layout/components/HeroComponent.jsx"
 */
 
 function HeroSection({
-    layoutSection = "AnimeTV", //AnimeTV
-    dataSection = "1", //1
-    bgImage = defaultImage,
-    children
+    variant = "AnimeTV",
+    dataType = {variant},
+    dataNumber = "1",
 }) {
-    defaultImage = "../assets/image/img-01.jpeg"
+    //defaultImage = "../assets/image/img-01.jpeg"
     return (
         <section id="hero">
             <div className="hero flex flex-column">
                 <div className="hero__overlay flex flex-column justify-flex-end">
-                  <HeroComponent layout={layoutSection} data={dataSection}></HeroComponent>
+                  <HeroComponent variant={variant} dataNumber={dataNumber} dataType={dataType}></HeroComponent>
                 </div>
             </div>
         </section>

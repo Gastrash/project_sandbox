@@ -14,14 +14,14 @@ Partición del componente:
 */
 
 function HeaderSection({
-  layoutSection = "AnimeTV",
-  dataSection = "1", //AnimeTV
-  children
+  variant = "AnimeTV",
+  dataType = {variant},
+  dataNumber = "1"
 }) {
     return (
         <header>
             <div className="header flex flex-row justify-space-between align-center">
-              <HeaderComponent layout={layoutSection} data={dataSection}></HeaderComponent>
+              <HeaderComponent variant={variant} dataNumber={dataNumber} dataType={dataType}></HeaderComponent>
             </div>
         </header>
   )
@@ -30,7 +30,5 @@ function HeaderSection({
 export default HeaderSection
 
 /*
-
-<Card variant="default" size="1" layout="vertical" backgroundImage="src/assets/image/img-01.jpeg"></Card>
 
 */

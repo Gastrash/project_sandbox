@@ -1,19 +1,16 @@
-//layout/components/HeroComponent.jsx
+//layout/components/HeroAnimeTV.jsx
 
 import List from "../../components/List.jsx"
 import Button from "../../components/Button.jsx"
 import Heart from "../../icons/Heart.jsx"
 import Like from "../../icons/Like.jsx"
 
-function HeroComponent ({
-    layout = "AnimeTV",
-    data
-    //bgImage, ..
+function HeroAnimeTV ({
+    dataNumber
+    //bgImage,
 }) {
-    switch(layout){
-        case "AnimeTV":
-            return (
-                <>
+    return (
+        <div className="hero__overlay flex flex-column justify-flex-end">
                 <div className="hero-image">
                 <img /*src={bgImage}*/ />
                 </div>
@@ -31,11 +28,8 @@ function HeroComponent ({
                     <Button variant="secondary" layout="square" size="2" icon={<Heart />}></Button>
                     <Button variant="secondary" layout="square" size="2" icon={<Like />}></Button>
                 </div>
-                </>
-            )
-        case "2":
-            return (<></>)
-    }
+        </div>
+    )
 }
 
-export default HeroComponent
+export default HeroAnimeTV

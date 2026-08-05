@@ -1,17 +1,14 @@
-//layout/components/HeaderComponent.jsx
+//layout/components/HeaderAnimeTV.jsx
 
 import List from "../../components/List.jsx"
 import Button from "../../components/Button.jsx"
 
-function HeaderComponent ({
-    layout = "AnimeTV",
-    data = "1"
+function HeaderAnimeTV ({
+    dataNumber
 }) {
-    switch(layout) {
-        case "AnimeTV":
-            return (
-                <>
-                    <div className="header__left flex flex-row justify-center align-center">
+    return (
+        <>
+        <div className="header__left flex flex-row justify-center align-center">
     <h2 className="header__title">AnimeTV</h2>
     <nav className="header__nav flex flex-row justify-center align-center">
         <List>
@@ -30,11 +27,8 @@ function HeaderComponent ({
         </List>
     </nav>
     </div>
-                </>
-            )
-        case "2":
-            return (<></>)
-    }
+        </>
+    )
 }
 
-export default HeaderComponent
+export default HeaderAnimeTV
