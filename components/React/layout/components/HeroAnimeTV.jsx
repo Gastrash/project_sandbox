@@ -5,10 +5,16 @@ import Button from "../../components/Button.jsx"
 import Heart from "../../icons/Heart.jsx"
 import Like from "../../icons/Like.jsx"
 
+import HeroAnimeTVData from "../data/AnimeTV/HeroAnimeTV-data.js"
+
 function HeroAnimeTV ({
-    dataNumber
+    dataNumber = 0,
     //bgImage,
 }) {
+    /*
+    const anime = heroAnimeTV-data.items[0]
+    <img src={anime.image} alt={anime.title} />
+    */
     return (
         <div className="hero__overlay flex flex-column justify-flex-end">
                 <div className="hero-image">
