@@ -9,7 +9,7 @@ import HeroAnimeTVData from "../data/AnimeTV/HeroAnimeTV-data.js"
 
 function HeroAnimeTV ({
     dataNumber = 0,
-    //bgImage,
+    //bgImage, rating, ranking, title, description.
 }) {
     /*
     const anime = heroAnimeTV-data.items[0]
