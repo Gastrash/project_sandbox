@@ -5,6 +5,7 @@ import Button from "../../components/Button.jsx"
 
 function HeaderAnimeTV ({
     dataNumber
+  //title
 }) {
     return (
         <>

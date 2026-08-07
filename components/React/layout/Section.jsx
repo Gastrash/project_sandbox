@@ -1,14 +1,16 @@
 /* layout/Section.jsx */
 
+import RenderSection from "RenderSection.jsx"
+
 function Section({
-    type = "hero",
+    variant = "hero",
     container = "",
-    children
+    dataNumber = "1"
 }) {
     return (
-        <section id={type} className={`${container}`}>
-            <div className={`${type}`}>
-                {children}
+        <section id={variant} className={`${container}`}>
+            <div className={`${variant}`}>
+              <RenderSection variant={variant} dataNumber={dataNumber}></RenderSection>
             </div>
         </section>
   )

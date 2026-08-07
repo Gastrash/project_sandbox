@@ -9,41 +9,61 @@ import MediaAnimeTV from "components/MediaAnimeTV.jsx"
 import CommentAnimeTV from "components/CommentAnimeTV.jsx"
 import FooterAnimeTV from "components/FooterAnimeTV.jsx"
 
+/*
+
+const sections = {
+    header: HeaderAnimeTV,
+    hero: HeroAnimeTV,
+    content: ContentAnimeTV,
+    infoContent: InfoAnimeTV,
+    seasonContent: SeasonAnimeTV,
+    mediaPlayer: MediaAnimeTV,
+    comments: CommentAnimeTV,
+    footer: FooterAnimeTV,
+}
+
+const Component = sections[variant]
+
+return Component ? <Component dataNumber={dataNumber} /> : null
+
+*/
+
 function RenderSection ({
-  variant = "Default"
+  variant = "hero",
+  dataNumber = "1"
 }) {
   switch(variant) {
-    case "HeaderAnimeTV":
+    case "header":
       return (
-        <HeaderAnimeTV variant={variant} dataNumber={dataNumber} dataType={dataType}></HeaderAnimeTV>
+        <HeaderAnimeTV dataNumber={dataNumber}></HeaderAnimeTV>
       )
-    case "HeroAnimeTV":
+    case "hero":
       return (
-        <HeroAnimeTV variant={variant} dataNumber={dataNumber} dataType={dataType}></HeroAnimeTV>
+        <HeroAnimeTV dataNumber={dataNumber}></HeroAnimeTV>
       )
-    case "ContentAnimeTV":
+    case "content":
       return (
-        <ContentAnimeTV variant={variant} dataNumber={dataNumber} dataType={dataType}></ContentAnimeTV>
+        <ContentAnimeTV dataNumber={dataNumber}></ContentAnimeTV>
       )
-    case "InfoAnimeTV":
+    case "infoContent":
       return (
-        <InfoAnimeTV variant={variant} dataNumber={dataNumber} dataType={dataType}></InfoAnimeTV>
+        <InfoAnimeTV dataNumber={dataNumber}></InfoAnimeTV>
       )
-    case "SeasonAnimeTV":
+    case "seasonContent":
       return (
-        <SeasonAnimeTV variant={variant} dataNumber={dataNumber} dataType={dataType}></SeasonAnimeTV>
+        <SeasonAnimeTV dataNumber={dataNumber}></SeasonAnimeTV>
       )
-    case "MediaAnimeTV":
+    case "mediaPlayer":
       return (
-        <MediaAnimeTV variant={variant} dataNumber={dataNumber} dataType={dataType}></MediaAnimeTV>
+        <MediaAnimeTV dataNumber={dataNumber}></MediaAnimeTV>
       )
-    case "CommentAnimeTV":
+    case "comments":
       return (
-        <CommentComponent variant={variant} dataNumber={dataNumber} dataType={dataType}></CommentComponent>
+        <CommentAnimeTV dataNumber={dataNumber}></CommentAnimeTV>
       )
-    case "FooterAnimeTV":
+    case "footer":
       return (
-        <FooterAnimeTV variant={variant} dataNumber={dataNumber} dataType={dataType}></FooterAnimeTV>
+        <FooterAnimeTV dataNumber={dataNumber}></FooterAnimeTV>
       )
   }
 }
