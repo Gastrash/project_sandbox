@@ -4,7 +4,6 @@ import List from "../../components/List.jsx"
 import Button from "../../components/Button.jsx"
 
 function HeaderAnimeTV ({
-    dataNumber
   //title
 }) {
     return (

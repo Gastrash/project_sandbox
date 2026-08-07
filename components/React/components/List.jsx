@@ -1,8 +1,7 @@
 // List.jsx
 
 /*
-- migrar estilos: content_list, content_item, ranking__list, ranking__item, seasonContent__grid, seasonContent__item, comments-list, comments-card, flex flex-row justify-flex-start.
-- hacer generación de elementos segun estado.
+
 */
 
 function List ({

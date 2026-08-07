@@ -7,7 +7,9 @@ function Card({
   variant = "default", //default, secondary
   size = "2", //1, 2, 3
   layout = "vertical", // horizontal(16:9), vertical(3:4)
-  backgroundImage = defaultImage, //
+
+  dataNumber,
+  backgroundImage = defaultImage, //backgroundImage="src/assets/image/img-01.jpeg
   children
 }) {
   return (

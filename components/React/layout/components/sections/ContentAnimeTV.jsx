@@ -13,7 +13,7 @@ function ContentAnimeTV ({
             </header>
             <main className="content__viewport">
                 <List layout="grid" variant="secondary">
-                    <Card variant="default" size="1" layout="vertical" backgroundImage="src/assets/image/img-01.jpeg"></Card>
+                    <Card variant="default" size="1" layout="vertical" dataNumber={dataNumber}></Card>
                 </List>
             </main>
         </>
