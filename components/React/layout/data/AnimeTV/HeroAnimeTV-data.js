@@ -1,3 +1,5 @@
+// title, description, image, id
+
 const heroAnimeTVData = {
   variant: "AnimeTV",
   dataType: "hero",

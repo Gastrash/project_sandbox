@@ -1,19 +1,25 @@
 // List.jsx
 
 /*
-
+<List layout="grid" variant="secondary">
+          {data.map((item) => (
+          ))}
+        </List>
 */
 
 function List ({
     layout = "horizontal",
     variant = "default", //
-    children
+    data = [],
+    renderItem
 }){
     return (
         <ul className={`list list--layout-${layout} list--variant-${variant}`}>
-            <li className={`list__element list__element--variant-${variant}`}>
-                {children}
-            </li>
+            {data.map((item) => (
+                <li key={item.id} className={`list__element   list__element--variant-${variant}`}>
+                    {renderItem(item)}
+                </li>
+            ))}
         </ul>
     )
 }
